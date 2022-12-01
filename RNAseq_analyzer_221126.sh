@@ -72,13 +72,13 @@ inputdir="../01_input"
 metadata=$1
 
 #This is where the ht2 files live:
-hisat2path="/scratch/summit/lbashor@colostate.edu/DSCI512/FinalPROJ_mm39IndexBuild/mm39"
+hisat2path="../../FinalPROJ_mm39IndexBuild/mm39"
 
 #This is where the genome sequence lives:
-genomefa="/scratch/summit/lbashor@colostate.edu/DSCI512/FinalPROJ_mm39IndexBuild/mm39_wholegenome.fa"
+genomefa="../../FinalPROJ_mm39IndexBuild/mm39_wholegenome.fa"
 
 #This is where the gtf file lives:
-gtffile="/scratch/summit/lbashor@colostate.edu/DSCI512/FinalPROJ_MNV/01_input/mm39.ncbiRefSeq.gtf"
+gtffile="../01_input/mm39.ncbiRefSeq.gtf"
 
 #This is the output_directory:
 DATE=`date +%Y-%m-%d`
