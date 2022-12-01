@@ -12,7 +12,7 @@
 # to save space.
 #
 # AUTHOR:
-# <yournamehere>
+# Dr. Erin Nishimura, modified Dec 1, 2022 by Laura Bashor
 #
 # START DATE:
 # November 26, 2022
@@ -66,19 +66,19 @@
 ####### MODIFY THIS SECTION #############
 
 #The input samples live in directory:
-inputdir="<yourinputdir>"
+inputdir="../01_input"
 
 #Metadata file. This pulls the metadata path and file from the command line
 metadata=$1
 
 #This is where the ht2 files live:
-hisat2path="<hisatpath/previx>"
+hisat2path="/scratch/summit/lbashor@colostate.edu/DSCI512/FinalPROJ_mm39IndexBuild/mm39"
 
 #This is where the genome sequence lives:
-genomefa="<genome.fa>"
+genomefa="/scratch/summit/lbashor@colostate.edu/DSCI512/FinalPROJ_mm39IndexBuild/mm39_wholegenome.fa"
 
 #This is where the gtf file lives:
-gtffile="<annotation.gtf>"
+gtffile="/scratch/summit/lbashor@colostate.edu/DSCI512/FinalPROJ_MNV/01_input/mm39.ncbiRefSeq.gtf"
 
 #This is the output_directory:
 DATE=`date +%Y-%m-%d`
