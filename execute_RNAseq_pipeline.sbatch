@@ -2,12 +2,12 @@
 
 #SBATCH --job-name=RNAseq_pipeline 
 #SBATCH --nodes=1                           # this script is designed to run on one node
-#SBATCH --ntasks=2                          # modify this number to reflect how many cores you want to use (up to 24)
+#SBATCH --ntasks=20                          # modify this number to reflect how many cores you want to use (up to 24)
 #SBATCH --time=04:00:00                     # modify this number to reflect how much time to request
 #SBATCH --partition=shas                    # modify this to reflect which queue you want to use. Either 'shas' or 'shas-testing'
 #SBATCH --qos=normal                        # Should be 'normal' if partition is 'shas'; should be 'testing' if partition is 'shas-testing'
 #SBATCH --mail-type=END                     # Keep these two lines of code if you want an e-mail sent to you when it is complete.
-#SBATCH --mail-user=<youremail>             # add your e-mail here
+#SBATCH --mail-user=lbashor@colostate.edu             # add your e-mail here
 #SBATCH --output=log_RNAseq_pipe_%j.txt     # this will capture all output in a logfile with %j as the job #
 
 ######### Instructions ###########
@@ -20,7 +20,7 @@
 
 
 ## Execute the RNA-seq_pipeline to run the pipeline
-bash RNAseq_analyzer_221126.sh <metadatafile>  $SLURM_NTASKS
+bash RNAseq_analyzer_221126.sh metadata_Tuipulotu.txt $SLURM_NTASKS
 
 
 ## Execute the cleanup script to zip .fastq files and delete extra files
