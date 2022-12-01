@@ -20,7 +20,7 @@
 
 
 ## Execute the RNA-seq_pipeline to run the pipeline
-bash RNAseq_analyzer_221126.sh metadata_Tuipulotu.txt $SLURM_NTASKS
+bash RNAseq_analyzer_221126.sh ../01_input/metadata_Tuipulotu.txt $SLURM_NTASKS
 
 
 ## Execute the cleanup script to zip .fastq files and delete extra files
